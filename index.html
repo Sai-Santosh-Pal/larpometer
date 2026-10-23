@@ -16,20 +16,46 @@
         <div class="md:flex-row flex text-white border-[0.5px] border-stone-800 md:w-[80%]">
             <div class="right py-10 my-2 gap-2 border-r-1 border-stone-800 flex flex-col px-5 w-[50%]">
                 <p class="italic font-bold">Enter the following details:</p>
-                <form id="details" class="mt-3 gap-3 flex flex-col ">
+                <form id="details" class="mt-3 gap-3 flex flex-col">
                     <div>
                         <label for="name">your name</label><br>
-                        <input type="text" class="border-[0.2px] py-1 px-3 border-stone-600 outline-none rounded-sm w-[100%]" id="name">
+                        <input
+                            type="text"
+                            name="name"
+                            id="name"
+                            required
+                            class="border-[0.2px] py-1 px-3 border-stone-600 outline-none rounded-sm w-[100%]"
+                        >
                     </div>
+
                     <div>
                         <label for="larp-name">your "larp" name</label><br>
-                        <input type="text" class="border-[0.2px] py-1 px-3 border-stone-600 outline-none rounded-sm w-[100%]" id="larp-name">
+                        <input
+                            type="text"
+                            name="larpName"
+                            id="larp-name"
+                            required
+                            class="border-[0.2px] py-1 px-3 border-stone-600 outline-none rounded-sm w-[100%]"
+                        >
                     </div>
+
                     <div>
-                        <label for="name">your larp</label><br>
-                        <textarea resizable class="border-[0.2px] py-1 px-3 border-stone-600 outline-none rounded-sm w-[100%]" id="name"></textarea>
-                        <button class="cursor-pointer px-5 py-2 mt-4 hover:outline-1 outline-white outline-offset-[2px] bg-white text-black font-bold">get your larp score</button>
+                        <label for="larp">your larp</label><br>
+                        <textarea
+                            name="larp"
+                            id="larp"
+                            required
+                            class="border-[0.2px] py-1 px-3 border-stone-600 outline-none rounded-sm w-[100%]"
+                        ></textarea>
                     </div>
+
+                    <button
+                        type="submit"
+                        id="btn"
+                        class="cursor-pointer px-5 py-2 mt-4 hover:outline-1 outline-white outline-offset-[2px] bg-white text-black font-bold"
+                    >
+                        get your larp score
+                    </button>
                 </form>
             </div>
             <div class="left w-[50%] flex flex-col justify-center items-center">
@@ -41,6 +67,7 @@
                 </div>
             </div>
         </div>
+        <script src="index.js"></script>
     </div>
     <style>
         *{
